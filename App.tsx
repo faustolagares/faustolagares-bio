@@ -2,7 +2,7 @@ import React from 'react';
 import ProfileHeader from './components/ProfileHeader';
 import Highlights from './components/Highlights';
 import SocialLinks from './components/SocialLinks';
-import FeaturedLink from './components/FeaturedLink';
+import ServicesGrid from './components/ServicesGrid';
 import LatestPost from './components/LatestPost';
 import AudioSection from './components/AudioSection';
 import ListenOnSection from './components/ListenOnSection';
@@ -14,7 +14,6 @@ import ServicesSection from './components/ServicesSection';
 import Testimonials from './components/Testimonials';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
-import { MousePointer2 } from 'lucide-react';
 
 // Main App Component
 const App: React.FC = () => {
@@ -37,28 +36,8 @@ const App: React.FC = () => {
         {/* Content Wrapper for Padding */}
         <div className="px-4 sm:px-6 space-y-12 pb-8">
           
-          {/* Featured Cards Stack */}
-          <div className="space-y-4">
-            <FeaturedLink 
-              title="Ultra"
-              subtitle="A high quality Framer portfolio template designed for creatives."
-              badge="Store"
-              Icon={MousePointer2}
-              iconBg="bg-white text-black"
-            />
-            <FeaturedLink 
-              title="Grainy Gradients"
-              subtitle="16 free 8k wallpapers for desktop and mobile."
-              badge="Downloadable"
-              image="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=100&h=100&fit=crop"
-            />
-            <FeaturedLink 
-              title="AR & Design"
-              subtitle="Opportunities and challenges for designers working with AR."
-              badge="Blog Post"
-              image="https://images.unsplash.com/photo-1614726365723-49cfa361db4f?w=100&h=100&fit=crop"
-            />
-          </div>
+          {/* Services Grid */}
+          <ServicesGrid />
 
           <LatestPost />
           <AudioSection />
