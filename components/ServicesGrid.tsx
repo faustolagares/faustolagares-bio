@@ -63,7 +63,7 @@ const ServicesGrid: React.FC = () => {
               <p className="text-xs text-muted font-light leading-relaxed mb-4">
                 {service.description}
               </p>
-              <button className="w-full py-2 bg-secondary hover:bg-neutral-800 border border-border rounded-lg text-xs font-normal text-primary/90 transition-colors">
+              <button className="w-full py-2 text-white rounded-lg text-xs font-normal transition-colors hover:opacity-90" style={{ backgroundColor: '#1754d8' }}>
                 Learn more
               </button>
             </div>
