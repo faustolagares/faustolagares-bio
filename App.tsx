@@ -19,7 +19,7 @@ import { MousePointer2 } from 'lucide-react';
 // Main App Component
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-background font-sans text-primary selection:bg-neutral-700 selection:text-white">
+    <div className="min-h-screen bg-black font-sans text-primary selection:bg-neutral-700 selection:text-white">
       
       {/* Main Content Container */}
       <main className="max-w-xl mx-auto">

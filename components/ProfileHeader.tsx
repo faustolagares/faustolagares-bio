@@ -22,22 +22,22 @@ const ProfileHeader: React.FC = () => {
     <div className="flex flex-col items-center text-center pb-6">
       
       {/* Cover Image */}
-      <div className="w-full h-32 sm:h-40 bg-neutral-800 relative">
+      <div className="w-full h-48 sm:h-64 bg-neutral-800 relative">
         <img 
-          src="https://images.unsplash.com/photo-1523987355523-c7b5b0dd90a7?w=1000&h=400&fit=crop" 
+          src="/photos/faustolagares-cover.avif" 
           alt="Cover" 
           className="w-full h-full object-cover opacity-80"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/10 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       </div>
 
       {/* Avatar */}
       <div className="relative -mt-12 mb-3">
         <div className="w-24 h-24 rounded-full overflow-hidden ring-4 ring-background bg-background relative z-10">
           <img 
-            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" 
+            src="/photos/fausto-lagares.avif" 
             alt="Fausto Lagares" 
-            className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+            className="w-full h-full object-cover transition-all duration-500"
           />
         </div>
       </div>
