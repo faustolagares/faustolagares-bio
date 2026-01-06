@@ -5,9 +5,9 @@ import {
   Share, 
   Copy, 
   Bell, 
-  BadgeCheck,
   Check
 } from 'lucide-react';
+import { MdVerified } from 'react-icons/md';
 
 const ProfileHeader: React.FC = () => {
   const [copied, setCopied] = useState(false);
@@ -26,9 +26,8 @@ const ProfileHeader: React.FC = () => {
         <img 
           src="/photos/faustolagares-cover.avif" 
           alt="Cover" 
-          className="w-full h-full object-cover opacity-80"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black" />
       </div>
 
       {/* Avatar */}
@@ -46,21 +45,22 @@ const ProfileHeader: React.FC = () => {
         {/* Name and Verification */}
         <div className="flex items-center gap-2">
           <h1 className="text-2xl font-medium tracking-tight text-primary">Fausto Lagares</h1>
-          <BadgeCheck className="w-5 h-5 text-yellow-500/80 fill-yellow-500/10" />
+          <MdVerified className="w-5 h-5 text-blue-500" />
         </div>
 
         {/* Meta Info */}
         <div className="flex items-center gap-2 text-xs font-normal text-muted uppercase tracking-wide">
-          <span>Est. 1999</span>
+          <span>Purpose</span>
           <span>•</span>
-          <span>Auckland, NZ</span>
+          <span>Creativity</span>
           <span>•</span>
-          <span>he/him</span>
+          <span>Technology</span>
         </div>
 
         {/* Bio */}
         <p className="text-sm text-neutral-400 max-w-sm leading-relaxed font-light">
-          Fausto Lagares is an avid skateboarder, software designer and content creator based in New Zealand.
+          Helping purpose survive and scale with intention<br />
+          in a world shaped by AI.
         </p>
 
         {/* Contact Links */}
